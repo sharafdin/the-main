@@ -1,0 +1,57 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* fonts */
+  --font-inter: Inter;
+  --font-inria-serif: "Inria Serif";
+
+  /* Colors */
+  --color-white: #fff;
+  --color-brown-200: #991b1b;
+  --color-whitesmoke-200: #f4f4f4;
+}
+
+header {
+  background-color: var(--color-white);
+  padding: 10px 20px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.search-box input {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  background-color: var(--color-whitesmoke-200);
+}
+
+.logo img {
+  height: 50px; /* Adjust size based on logo */
+}
+
+.logo p {
+  font-size: 12px;
+  color: #333;
+  text-align: center;
+}
+
+nav a {
+  margin: 0 10px;
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: var(--font-inter);
+}
+
+.cart-icon {
+  color: var(--color-brown-200); /* Adjust to red shade */
+}
