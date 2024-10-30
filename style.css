@@ -1,13 +1,49 @@
 .main {
-    max-width: 90%;
-    margin: 0 auto;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+:root {
+  /* fonts */
+  --font-inter: Inter;
+  --font-inria-serif: "Inria Serif";
+
+  /* Colors */
+  --color-white: #fff;
+  --color-brown-200: #991b1b;
+  --color-whitesmoke-200: #f4f4f4;
+  --color-lavenderblush: #fef2f2;
 }
 
 section {
-    background-color: aqua;
-    height: 400px;
+  background-color: aqua;
 }
 
-section .categories {
-    background-color: aquamarine;
+section .product-category {
+  background-color: var(--color-lavenderblush);
+  display: flex;
+  flex-direction: column;
+  width: 467px;
+  gap: 20px;
+  justify-content: center;
+  position: relative;
+  padding: 50px;
+  border-radius: 15px;
+}
+
+.category-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.category-icon {
+  height: 50px;
+  width: 50px;
+}
+
+.category-label {
+  flex: 1;
+  min-width: 124px;
 }
