@@ -60,7 +60,10 @@ nav a {
 .bars-icon {
     display: none;
 }
-
+.cart-icon img {
+    width: 100%;
+    height: 33px;
+}
 @media (max-width: 767px) {
      nav a {
         display: none;
