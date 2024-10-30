@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Import Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Inria+Serif:wght@400;700&family=Inter:wght@400;700&display=swap");
+
+body {
+  font-family: "Inter";
+  color: #333;
+}
+
+.icons {
+  width: 33px;
+  height: 33px;
+}
+.contact-info .icons {
+  margin-right: 10px;
+}
+
+.contact-us {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 40px 20px;
+  gap: 20px;
+}
+
+.contact-info h2,
+.contact-form h2 {
+  font-family: "Inria Serif", serif;
+  color: #a00;
+  font-size: 24px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.contact-info p {
+  font-size: 16px;
+  line-height: 1.6;
+  display: flex;
+  align-items: center;
+  margin: 8px 0;
+}
+
+.contact-info i {
+  margin-right: 10px;
+  color: #333;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+  font-family: "Inter", sans-serif;
+  padding: 15px 10px;
+  margin-bottom: 15px;
+  border: 1px solid #dfdbdb;
+  border-radius: 8px;
+  background-color: #cacaca;
+  font-size: 16px;
+}
+input {
+  width: 100%;
+}
+.contact-form form .top {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.contact-form textarea {
+  height: 160px;
+  resize: none;
+}
+
+.contact-form button {
+  padding: 12px;
+  background-color: #a00;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: "Inter", sans-serif;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .contact-us {
+    flex-direction: column;
+    align-items: start;
+    padding: 20px;
+  }
+  .contact-us h2 {
+    margin-bottom: 30px;
+    text-align: center;
+    width: 100%;
+  }
+  .contact-form {
+    margin-top: 70px;
+    width: 100%;
+  }
+
+  .contact-form button {
+    width: 100%;
+  }
+}
