@@ -1,0 +1,190 @@
+:root {
+    /* fonts */
+    --font-inter: Inter;
+    --font-inria-serif: "Inria Serif";
+  
+    /* Colors */
+    --color-white: #fff;
+    --color-brown-200: #991b1b;
+    --color-whitesmoke-200: #f4f4f4;
+    --color-lavenderblush: #fef2f2;
+  }
+  
+  a {
+    text-decoration: none;
+    color: var(--color-firebrick-100);
+    font-weight: bold;
+    font-size: var(--font-size-base);
+  }
+  
+  .home-page {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    background-color: var(--color-white);
+    overflow: hidden;
+    padding: var(--padding-sm) 0 0;
+  }
+  .carousel-item-child {
+    width: 292px;
+    height: 425px;
+    position: relative;
+    border-radius: var(--br-mini);
+    background-color: var(--color-white);
+    border: 3px solid var(--color-lavenderblush);
+    display: none;
+  }
+  .add-shopping-cart4,
+  .favorite-icon4 {
+    height: 44px;
+    width: 43px;
+    position: relative;
+    object-fit: cover;
+    z-index: 2;
+  }
+  .add-shopping-cart4 {
+    width: 44px;
+  }
+  .favorite-icons,
+  .product-info {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .favorite-icons {
+    justify-content: flex-start;
+    position: relative;
+  }
+  .product-info {
+    width: 264px;
+    justify-content: space-between;
+    gap: var(--gap-xl);
+  }
+  .red-bike-jacket3 {
+    align-self: stretch;
+    height: 26px;
+    position: relative;
+    display: inline-block;
+    flex-shrink: 0;
+    z-index: 1;
+  }
+  .nok-3001 {
+    flex: 1;
+    position: relative;
+    z-index: 1;
+  }
+  .price-info {
+    align-self: stretch;
+    flex-direction: row;
+    padding: 0 var(--padding-15xl) 0 var(--padding-16xl);
+    font-size: var(--font-size-xl);
+    color: var(--color-black);
+  }
+  .carousel-item,
+  .carousel-item1,
+  .price-info,
+  .product-info1 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .product-info1 {
+    flex: 1;
+    flex-direction: column;
+    gap: var(--gap-15xl);
+  }
+  .carousel-item1 {
+    width: 236px;
+    flex-direction: row;
+    padding: 0 var(--padding-15xl);
+  }
+  .carousel-item {
+    flex: 0.9362;
+    border-radius: var(--br-mini);
+    background-color: var(--color-white);
+    border: 3px solid var(--color-lavenderblush);
+    flex-direction: column;
+    padding: var(--padding-4xs) var(--padding-7xs) var(--padding-8xs)
+      var(--padding-base);
+    gap: var(--gap-254xl);
+    min-width: 269px;
+    max-width: 292px;
+  }
+  .rainydays-jacket1-5-icon {
+    position: absolute;
+    height: 270px;
+    width: 221px;
+    bottom: -260px;
+    left: -198px;
+  }
+  .product-carousel {
+    display: flex;
+    flex-direction: row;
+    gap: var(--gap-30xl);
+    font-size: var(--font-size-6xl);
+  }
+  .section-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--gap-28xl);
+    max-width: 100%;
+  }
+  .section {
+    display: flex;
+    flex-direction: row;
+    padding: 0 var(--padding-26xl);
+    max-width: 100%;
+    text-align: center;
+    font-size: var(--font-size-11xl);
+    color: var(--color-firebrick-100);
+    font-family: var(--font-inter);
+  }
+  
+  @media screen and (max-width: 1200px) {
+    .product-carousel {
+      flex-wrap: wrap;
+    }
+    .section {
+      padding-left: var(--padding-3xl);
+      padding-right: var(--padding-3xl);
+    }
+  }
+  
+  @media screen and (max-width: 1050px) {
+    .product-carousel {
+      justify-content: center;
+      grid-template-columns: repeat(2, minmax(226px, 393px));
+    }
+  }
+  
+  @media screen and (max-width: 750px) {
+    .product-carousel {
+      gap: var(--gap-5xl);
+      grid-template-columns: minmax(226px, 1fr);
+    }
+    .section-container {
+      gap: var(--gap-4xl);
+    }
+  
+    .home-page {
+      gap: 85px;
+    }
+  }
+  
+  @media screen and (max-width: 450px) {
+  
+    .home-page {
+      gap: var(--gap-24xl);
+    }
+    .red-bike-jacket3 {
+      font-size: var(--font-size-xl);
+    }
+    .nok-3001 {
+      font-size: var(--font-size-base);
+    }
+    .carousel-item {
+      gap: var(--gap-117xl);
+    }
+  }
+  
