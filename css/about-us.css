@@ -1,0 +1,77 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inria+Serif:wght@400;700&family=Inter:wght@400;700&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+main {
+    padding: 20px;
+}
+.back img{
+width: 33px;
+height: 33px;
+}
+/* About Us Section */
+.about-us {
+    display: flex;
+    align-items: start;
+    padding: 20px;
+    text-align: left;
+    gap: 50px;
+}
+
+.logo-large img {
+    width: 100%;
+    margin-top: 20px;
+}
+
+
+.about-text {
+    width: 100%;
+}
+.about-text h1 {
+    font-family: 'Inter', serif;
+    color: #a00;
+    margin-top: 20px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.about-text p {
+    max-width: 800px;
+    line-height: 1.3rem;
+    margin-top: 10px;
+    color: #555;
+}
+
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .about-us {
+        padding: 10px;
+        flex-direction: column;
+    }
+
+    .logo-large img {
+        width: 100%;
+    }
+
+    .about-text h1 {
+        font-size: 20px;
+    }
+
+    .about-text p {
+        font-size: 14px;
+    }
+}
