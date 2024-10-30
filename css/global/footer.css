@@ -90,6 +90,11 @@ footer {
 .bottom p {
   display: none;
 }
+
+.social-icons img {
+  width: 100%;
+  height: 33px;
+}
 @media (max-width: 767px) {
   .footer-logo {
     display: none;
