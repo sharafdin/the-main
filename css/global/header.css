@@ -19,6 +19,7 @@ header {
   background-color: var(--color-white);
   padding: 10px 20px;
   border-bottom: 1px solid #e5e5e5;
+  margin-bottom: 10px;
 }
 
 .header-container {
@@ -53,5 +54,24 @@ nav a {
 }
 
 .cart-icon {
-  color: var(--color-brown-200); /* Adjust to red shade */
+  color: var(--color-brown-200); 
+}
+
+.bars-icon {
+    display: none;
+}
+
+@media (max-width: 767px) {
+     nav a {
+        display: none;
+     }
+  .search-box{
+    display: none;
+  }
+  .cart-icon {
+    display: inline-block;
+  }
+  .bars-icon {
+    display: inline-block;
+}
 }
