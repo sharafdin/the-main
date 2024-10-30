@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Inria+Serif:wght@400;700&family=Inter:wght@400;700&display=swap");
+
 * {
   padding: 0;
   margin: 0;
@@ -13,6 +15,8 @@
   --color-white: #fff;
   --color-brown-200: #991b1b;
   --color-whitesmoke-200: #f4f4f4;
+  --color-gainsboro: #b9b9b9;
+  --color-gray-100: #1f2937;
 }
 
 footer {
@@ -36,13 +40,15 @@ footer {
 
 .footer-logo p {
   font-size: 12px;
+  font-weight: 600;
   color: #333;
   text-align: center;
+  font-family: var(--font-inter);
 }
 
 .footer-logo .zone-text {
   color: red;
-  font-weight: bold;
+  font-weight: bolder;
 }
 
 .newsletter p {
@@ -56,25 +62,25 @@ footer {
   border-radius: 8px;
   border: 1px solid #ddd;
   margin-right: 5px;
+  background-color: var(--color-gainsboro);
 }
 
 .subscribe-box button {
   padding: 8px 12px;
-  background-color: #a00;
-  color: #fff;
+  background-color: var(--color-brown-200);
+  color: var(--color-white);
   border: none;
   border-radius: 8px;
   cursor: pointer;
 }
 .social-icons {
-    display: flex;
-    justify-content: space-between;
-    padding: 0 3px;
-    margin-top: 20px;
-
+  display: flex;
+  justify-content: space-between;
+  padding: 0 3px;
+  margin-top: 20px;
 }
 .social-icons a {
-  color: #333;
+  color: var(--color-gray-100);
   margin-right: 10px;
   font-size: 22px;
   text-decoration: none;
