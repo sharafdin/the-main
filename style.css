@@ -1,0 +1,13 @@
+.main {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+section {
+    background-color: aqua;
+    height: 400px;
+}
+
+section .categories {
+    background-color: aquamarine;
+}
